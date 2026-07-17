@@ -133,7 +133,20 @@ agent-reliability-lab/
 - Passing these scenarios does not prove an agent is safe; it proves only the named recovery
   guarantees under the declared fault model.
 
+## Responsible evaluation
+
+The lab runs locally on synthetic scenarios. Reports explain each result with scenario, strategy,
+pass/fail, faults, recoveries, tool calls, and virtual latency. Each HTML dashboard includes an
+expandable evidence table and Print/PDF styling; a sibling CSV provides the same aggregate rows.
+An empty run set has no strategy claim, and production promotion requires human review rather than
+automatic selection from a simulated pass rate.
+
+- [Privacy and local analysis](PRIVACY.md)
+- [Evaluator training](docs/EVALUATOR_TRAINING.md)
+- [Deployment runbook](docs/DEPLOYMENT_RUNBOOK.md)
+- [Counterfactual and fairness checks](docs/FAIRNESS_AND_COUNTERFACTUALS.md)
+- [Outcome metrics](docs/METRICS.md)
+
 ## License
 
 MIT.
-

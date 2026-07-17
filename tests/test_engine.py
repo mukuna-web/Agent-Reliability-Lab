@@ -87,3 +87,13 @@ def test_unknown_strategy_is_rejected() -> None:
     with pytest.raises(ValueError, match="unknown strategy"):
         Strategy.named("magic")
 
+
+def test_scenario_display_name_does_not_change_reliability_metrics(tmp_path: Path) -> None:
+    first = load_scenario(write_scenario(tmp_path / "one", name="team-alpha"))
+    second = load_scenario(write_scenario(tmp_path / "two", name="team-beta"))
+
+    first_result = run_scenario(first, Strategy.resilient())
+    second_result = run_scenario(second, Strategy.resilient())
+
+    assert first_result.metrics == second_result.metrics
+    assert first_result.passed == second_result.passed

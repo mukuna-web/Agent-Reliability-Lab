@@ -1,0 +1,13 @@
+scenario,strategy,passed,faults_injected,faults_recovered,tool_calls,virtual_latency_ms
+malformed-output-recovery,baseline,False,1,0,1,73
+malformed-output-recovery,resilient,True,1,1,3,141
+partial-stream-recovery,baseline,False,1,0,1,105
+partial-stream-recovery,resilient,True,1,1,3,155
+provider-failure-recovery,baseline,False,1,0,2,175
+provider-failure-recovery,resilient,True,1,1,3,204
+repeated-call-deduplication,baseline,False,1,0,1,44
+repeated-call-deduplication,resilient,True,1,1,2,79
+stale-memory-recovery,baseline,False,1,0,2,96
+stale-memory-recovery,resilient,True,1,1,3,128
+timeout-recovery,baseline,False,1,0,1,532
+timeout-recovery,resilient,True,1,1,3,598
