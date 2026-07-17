@@ -1,0 +1,21 @@
+[scenario]
+name = "partial-stream-recovery"
+description = "The first streamed tool response ends early"
+seed = 31
+
+[[steps]]
+tool = "fetch_logs"
+arguments = { service = "billing" }
+result = { status = "healthy", incidents = 0 }
+
+[[steps]]
+tool = "check_metrics"
+arguments = { service = "billing" }
+result = { error_rate = 0.01 }
+
+[[faults]]
+kind = "partial_stream"
+step = 0
+occurrence = 1
+repeat = 1
+

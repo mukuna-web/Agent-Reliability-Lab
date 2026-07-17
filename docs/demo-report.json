@@ -1,0 +1,211 @@
+{
+  "runs": [
+    {
+      "failure_reason": "malformed_output",
+      "metrics": {
+        "cost_units": 1.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 0,
+        "tool_calls": 1,
+        "virtual_latency_ms": 73
+      },
+      "passed": false,
+      "run_id": "malformed-output-recovery-baseline-4ede287ce6c7",
+      "scenario": "malformed-output-recovery",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 3.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 3,
+        "virtual_latency_ms": 141
+      },
+      "passed": true,
+      "run_id": "malformed-output-recovery-resilient-65727570f051",
+      "scenario": "malformed-output-recovery",
+      "schema_version": 1,
+      "strategy": "resilient"
+    },
+    {
+      "failure_reason": "partial_stream",
+      "metrics": {
+        "cost_units": 1.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 0,
+        "tool_calls": 1,
+        "virtual_latency_ms": 105
+      },
+      "passed": false,
+      "run_id": "partial-stream-recovery-baseline-e33f24c54803",
+      "scenario": "partial-stream-recovery",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 3.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 3,
+        "virtual_latency_ms": 155
+      },
+      "passed": true,
+      "run_id": "partial-stream-recovery-resilient-c109700382b3",
+      "scenario": "partial-stream-recovery",
+      "schema_version": 1,
+      "strategy": "resilient"
+    },
+    {
+      "failure_reason": "provider_failure",
+      "metrics": {
+        "cost_units": 2.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 1,
+        "tool_calls": 2,
+        "virtual_latency_ms": 175
+      },
+      "passed": false,
+      "run_id": "provider-failure-recovery-baseline-7abd5aa661f4",
+      "scenario": "provider-failure-recovery",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 3.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 3,
+        "virtual_latency_ms": 204
+      },
+      "passed": true,
+      "run_id": "provider-failure-recovery-resilient-b544b40e3aef",
+      "scenario": "provider-failure-recovery",
+      "schema_version": 1,
+      "strategy": "resilient"
+    },
+    {
+      "failure_reason": "repeated_call",
+      "metrics": {
+        "cost_units": 1.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 0,
+        "tool_calls": 1,
+        "virtual_latency_ms": 44
+      },
+      "passed": false,
+      "run_id": "repeated-call-deduplication-baseline-a2fa33221594",
+      "scenario": "repeated-call-deduplication",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 2.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 2,
+        "virtual_latency_ms": 79
+      },
+      "passed": true,
+      "run_id": "repeated-call-deduplication-resilient-f3d10637fca9",
+      "scenario": "repeated-call-deduplication",
+      "schema_version": 1,
+      "strategy": "resilient"
+    },
+    {
+      "failure_reason": "stale_memory",
+      "metrics": {
+        "cost_units": 2.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 1,
+        "tool_calls": 2,
+        "virtual_latency_ms": 96
+      },
+      "passed": false,
+      "run_id": "stale-memory-recovery-baseline-37a096503e1f",
+      "scenario": "stale-memory-recovery",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 3.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 3,
+        "virtual_latency_ms": 128
+      },
+      "passed": true,
+      "run_id": "stale-memory-recovery-resilient-0448f9325ff0",
+      "scenario": "stale-memory-recovery",
+      "schema_version": 1,
+      "strategy": "resilient"
+    },
+    {
+      "failure_reason": "timeout",
+      "metrics": {
+        "cost_units": 1.0,
+        "faults_injected": 1,
+        "faults_recovered": 0,
+        "steps_completed": 0,
+        "tool_calls": 1,
+        "virtual_latency_ms": 532
+      },
+      "passed": false,
+      "run_id": "timeout-recovery-baseline-4bf9d7d5f56a",
+      "scenario": "timeout-recovery",
+      "schema_version": 1,
+      "strategy": "baseline"
+    },
+    {
+      "failure_reason": null,
+      "metrics": {
+        "cost_units": 3.0,
+        "faults_injected": 1,
+        "faults_recovered": 1,
+        "steps_completed": 2,
+        "tool_calls": 3,
+        "virtual_latency_ms": 598
+      },
+      "passed": true,
+      "run_id": "timeout-recovery-resilient-dd5148279e1f",
+      "scenario": "timeout-recovery",
+      "schema_version": 1,
+      "strategy": "resilient"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "baseline": {
+      "average_tool_calls": 1.3333333333333333,
+      "pass_rate": 0.0,
+      "passed": 0,
+      "runs": 6
+    },
+    "resilient": {
+      "average_tool_calls": 2.8333333333333335,
+      "pass_rate": 1.0,
+      "passed": 6,
+      "runs": 6
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[scenario]
+name = "provider-failure-recovery"
+description = "The metrics provider returns one transient failure"
+seed = 23
+
+[[steps]]
+tool = "fetch_logs"
+arguments = { service = "worker" }
+result = { status = "healthy", incidents = 0 }
+
+[[steps]]
+tool = "check_metrics"
+arguments = { service = "worker" }
+result = { error_rate = 0.02 }
+
+[[faults]]
+kind = "provider_failure"
+step = 1
+occurrence = 1
+repeat = 1
+

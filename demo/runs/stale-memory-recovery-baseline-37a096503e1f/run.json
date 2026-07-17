@@ -1,0 +1,16 @@
+{
+  "failure_reason": "stale_memory",
+  "metrics": {
+    "cost_units": 2.0,
+    "faults_injected": 1,
+    "faults_recovered": 0,
+    "steps_completed": 1,
+    "tool_calls": 2,
+    "virtual_latency_ms": 96
+  },
+  "passed": false,
+  "run_id": "stale-memory-recovery-baseline-37a096503e1f",
+  "scenario": "stale-memory-recovery",
+  "schema_version": 1,
+  "strategy": "baseline"
+}

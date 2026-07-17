@@ -1,0 +1,16 @@
+{
+  "failure_reason": null,
+  "metrics": {
+    "cost_units": 2.0,
+    "faults_injected": 1,
+    "faults_recovered": 1,
+    "steps_completed": 2,
+    "tool_calls": 2,
+    "virtual_latency_ms": 79
+  },
+  "passed": true,
+  "run_id": "repeated-call-deduplication-resilient-f3d10637fca9",
+  "scenario": "repeated-call-deduplication",
+  "schema_version": 1,
+  "strategy": "resilient"
+}

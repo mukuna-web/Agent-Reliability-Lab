@@ -1,0 +1,21 @@
+[scenario]
+name = "stale-memory-recovery"
+description = "The agent reads one stale state snapshot"
+seed = 37
+
+[[steps]]
+tool = "fetch_logs"
+arguments = { service = "search" }
+result = { status = "healthy", incidents = 0 }
+
+[[steps]]
+tool = "check_metrics"
+arguments = { service = "search" }
+result = { error_rate = 0.01 }
+
+[[faults]]
+kind = "stale_memory"
+step = 1
+occurrence = 1
+repeat = 1
+

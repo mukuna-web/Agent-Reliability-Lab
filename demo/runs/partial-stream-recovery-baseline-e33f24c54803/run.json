@@ -1,0 +1,16 @@
+{
+  "failure_reason": "partial_stream",
+  "metrics": {
+    "cost_units": 1.0,
+    "faults_injected": 1,
+    "faults_recovered": 0,
+    "steps_completed": 0,
+    "tool_calls": 1,
+    "virtual_latency_ms": 105
+  },
+  "passed": false,
+  "run_id": "partial-stream-recovery-baseline-e33f24c54803",
+  "scenario": "partial-stream-recovery",
+  "schema_version": 1,
+  "strategy": "baseline"
+}

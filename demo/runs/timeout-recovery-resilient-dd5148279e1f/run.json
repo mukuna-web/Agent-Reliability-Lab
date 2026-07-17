@@ -1,0 +1,16 @@
+{
+  "failure_reason": null,
+  "metrics": {
+    "cost_units": 3.0,
+    "faults_injected": 1,
+    "faults_recovered": 1,
+    "steps_completed": 2,
+    "tool_calls": 3,
+    "virtual_latency_ms": 598
+  },
+  "passed": true,
+  "run_id": "timeout-recovery-resilient-dd5148279e1f",
+  "scenario": "timeout-recovery",
+  "schema_version": 1,
+  "strategy": "resilient"
+}

@@ -1,0 +1,21 @@
+[scenario]
+name = "timeout-recovery"
+description = "The log provider times out on its first call"
+seed = 17
+
+[[steps]]
+tool = "fetch_logs"
+arguments = { service = "api" }
+result = { status = "healthy", incidents = 0 }
+
+[[steps]]
+tool = "check_metrics"
+arguments = { service = "api" }
+result = { error_rate = 0.01 }
+
+[[faults]]
+kind = "timeout"
+step = 0
+occurrence = 1
+repeat = 1
+

@@ -1,0 +1,16 @@
+{
+  "failure_reason": "malformed_output",
+  "metrics": {
+    "cost_units": 1.0,
+    "faults_injected": 1,
+    "faults_recovered": 0,
+    "steps_completed": 0,
+    "tool_calls": 1,
+    "virtual_latency_ms": 73
+  },
+  "passed": false,
+  "run_id": "malformed-output-recovery-baseline-4ede287ce6c7",
+  "scenario": "malformed-output-recovery",
+  "schema_version": 1,
+  "strategy": "baseline"
+}

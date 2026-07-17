@@ -1,0 +1,16 @@
+{
+  "failure_reason": "provider_failure",
+  "metrics": {
+    "cost_units": 2.0,
+    "faults_injected": 1,
+    "faults_recovered": 0,
+    "steps_completed": 1,
+    "tool_calls": 2,
+    "virtual_latency_ms": 175
+  },
+  "passed": false,
+  "run_id": "provider-failure-recovery-baseline-7abd5aa661f4",
+  "scenario": "provider-failure-recovery",
+  "schema_version": 1,
+  "strategy": "baseline"
+}

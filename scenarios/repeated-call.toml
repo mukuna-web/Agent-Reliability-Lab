@@ -1,0 +1,21 @@
+[scenario]
+name = "repeated-call-deduplication"
+description = "The agent emits a duplicate tool request"
+seed = 41
+
+[[steps]]
+tool = "fetch_logs"
+arguments = { service = "notifications" }
+result = { status = "healthy", incidents = 0 }
+
+[[steps]]
+tool = "check_metrics"
+arguments = { service = "notifications" }
+result = { error_rate = 0.01 }
+
+[[faults]]
+kind = "repeated_call"
+step = 0
+occurrence = 1
+repeat = 1
+
